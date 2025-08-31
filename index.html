@@ -1,0 +1,226 @@
+<!doctype html>
+<html data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <style>
+        * {}
+    </style>
+</head>
+
+<body class="">
+
+    <div class="navbar    shadow-sm flex justify-between sticky top-0 z-10 bg-white">
+        <div class="flex">
+            <a class="btn btn-ghost text-xl text-black">Mini Shop</a>
+        </div>
+        <div>
+            <ul class="flex gap-20 font-bold">
+                <li>Home</li>
+                <li>Product</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="flex-none">
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span id="cartcount" class="badge badge-sm indicator-item">0</span>
+                    </div>
+                </div>
+                <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                    <div class="card-body">
+                        <span class="text-lg font-bold"><span id="cartitems" >0</span> Items</span>
+                        <span class="text-info">Subtotal: $999</span>
+                        <div class="card-actions">
+                            <button class="btn btn-primary btn-block">View cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component"
+                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li>
+                        <a class="justify-between">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="hero bg-base-200 min-h-[90vh]">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold ">Welcome to Mini Shop</h1>
+                    <p class="py-7">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button id="Shopnow" class="btn !bg-white hover:!bg-amber-300">Shop Now</button>
+                </div </div>
+            </div>
+        </div>
+
+        <div class="products flex gap-10 m-4 justify-center">
+
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fb1addb3-4a0e-42b3-ba15-70ba134f2bd3/NIKE+P-6000.png"
+                        alt="Shoes" class="rounded-xl w-full h-[200px] object-cover object-center" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Nike P-6000</h2>
+                    <p>Look to the future with the Nike P-6000. Refreshing the 2006 Air Pegasus with space-age details,
+                        like chrome synthetic leather and metallic fabric, this shoe is ready for whatever's next.
+
+                    </p>
+                    <div class="card-actions">
+                        <button  class="Pbuy-btn  btn btn-base-100 hover:!bg-amber-300">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/d904b4f9-5916-4f8e-a547-70001a2e194e/zoom-vomero-5-womens-shoes-81TPKW.png"
+                        alt="Shoes" class="rounded-xl w-full h-[200px] object-cover object-center" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Nike Zoom Vomero 5</h2>
+                    <p>Carve a new lane for yourself in the Zoom Vomero 5—your go-to for complexity, depth and easy
+                        styling. The richly layered design includes textiles, leather and metallic accents that come
+                        together to make one of the coolest sneakers of the season.</p>
+                    <div class="card-actions">
+                        <button class="Pbuy-btn  btn btn-base-100 hover:!bg-amber-300">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/43a033fd-f938-46b4-aa96-fd6d4c3d28b1/W+AF1+SHADOW.png"
+                        alt="Shoes" class="rounded-xl w-full h-[200px] object-cover object-center" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Nike Air Force 1 Shadow</h2>
+                    <p>Everything you love about the AF1—but doubled! The Air Force 1 Shadow puts a playful twist on a
+                        hoops icon to highlight the best of AF1 DNA. With 2 eyestays, 2 mudguards, 2 backtabs and 2
+                        Swoosh logos, you get a layered look with double the branding.</p>
+                    <div class="card-actions">
+                        <button class="Pbuy-btn  btn btn-base-100 hover:!bg-amber-300">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/02f8959e-927a-40c0-8ed6-366574f302d0/WMNS+AIR+FORCE+1+%2707.png"
+                        alt="Shoes" class="rounded-xl w-full h-[200px] object-cover object-center" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">Nike Air Force 1 '07</h2>
+                    <p>The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what
+                        you know best: crisp leather, bold colors and the perfect amount of flash to make you shine. A
+                        subtle platform gives you just the right amount of height.</p>
+                    <div class="card-actions">
+                        <button class=" Pbuy-btn btn btn-base-100 hover:!bg-amber-300">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    <div class="contact">
+        <section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+            <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+          <a class="text-indigo-500">minishop@email.com</a>
+          <p class="leading-normal my-5">Madam bibir hat.
+            <br>Chittagong, 4315
+          </p>
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+
+
+
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+  <aside>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by MiniShop</p>
+  </aside>
+</footer>
+
+<script src="index.js"></script>
+</body>
+
+</html>
