@@ -35,4 +35,4 @@ Improve UI with Tailwind + DaisyUI
 
 Step-by-step build towards a small shop demo
 
-### 👉 This is not a full e-commerce website, but a learning project to practice and improve JavaScript + frontend development skills.
+#### 👉 This is not a full e-commerce website, but a learning project to practice and improve JavaScript + frontend development skills.
